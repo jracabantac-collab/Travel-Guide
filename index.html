@@ -1,0 +1,151 @@
+<html>
+<head>
+  <title>My Website Menu</title>
+  <style>
+    body {
+      background-image: url("https://i.pinimg.com/1200x/9d/f4/81/9df4810d9725a127e07844d17453973b.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      background-color: #fffce1a2;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* MENU ITEMS */
+    .menu-item {
+      position: relative;
+    }
+
+    .menu a {
+      display: block;
+      background-color: #B0CDE6;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+    .menu a:hover {
+      background-color: #FFF3E3;
+      color: #DE7272;
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* SUBMENU */
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+      background-color: #dce8ff;
+      padding: 8px;
+      border-radius: 8px;
+      z-index: 10;
+    }
+
+    /* SHOW SUBMENU WHEN HOVERED */
+    .menu-item:hover .submenu {
+      display: block;
+    }
+
+    /* SUBMENU LINKS */
+    .submenu a {
+      background-color: #4169a1;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .submenu a:hover {
+      background-color: #f8e9ca;
+      color: #4169a1;
+      transform: translateX(5px);
+    }
+
+    /* HOME TEXT BOX (HIDDEN BY DEFAULT) */
+    #home-section {
+      display: none;
+      max-width: 860px;
+      margin: 25px auto;
+      background-color: rgba(255, 252, 225, 0.92);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <img src="logah.png" alt="Philippines" width="500">
+    
+    <nav class="menu">
+      <!-- HOME -->
+      <div class="menu-item">
+        <a href="#" onclick="toggleHome(event)">Home</a>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="menu-item">
+        <a href="Aboutphili.html">About</a>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="menu-item">
+        <a href="#">Gallery</a>
+        <div class="submenu">
+          <a href="Gallery.html">Culture</a>
+          <a href="Tourist.html">Tourist Destinations</a>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="menu-item">
+        <a href="Contact_Us.html">Contact</a>
+      </div>
+    </nav>
+
+
+    <div id="home-section">
+      <h1>Welcome to the Philippines!</h1>
+      <p>
+        Explore the breathtaking beauty of over 7,600 islands. From crystal-clear lagoons 
+        and towering limestone cliffs in Palawan to rich cultural traditions and warm hospitality, 
+        discover what makes the Philippines an unforgettable destination.
+      </p>
+    </div>
+  </center>
+
+  <script>
+    function toggleHome(event) {
+      event.preventDefault();
+      var homeBox = document.getElementById("home-section");
+
+      if (homeBox.style.display === "block") {
+        homeBox.style.display = "none";
+      } else {
+        homeBox.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
