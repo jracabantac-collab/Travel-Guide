@@ -1,0 +1,73 @@
+ 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>My Google Map</title> 
+ 
+    <style> 
+
+        body { 
+            font-family:'Times New Roman', Times, serif; 
+            text-align: center; 
+              background-image: url("https://i.pinimg.com/1200x/9d/f4/81/9df4810d9725a127e07844d17453973b.jpg");
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+            margin: 0;
+             padding: 0;
+        } 
+ 
+        h1 { 
+            color: rgb(215, 220, 131); 
+        } 
+ 
+        iframe { 
+            border: 5px solid white; 
+            border-radius: 15px; 
+        } 
+ 
+        button { 
+            padding: 10px 20px; 
+            margin: 5px; 
+            background-color: rgb(73, 121, 210); 
+            color: #ffff8b; 
+            border: none; 
+            cursor: pointer; 
+            border-radius: 5px; 
+        } 
+ 
+        button:hover { 
+            background-color: rgb(83, 66, 103); 
+        } 
+    </style> 
+ 
+</head> 
+ 
+<body> 
+ 
+<script> 
+   document.writeln("<center>");
+ 
+document.writeln("<h1>TOURIST DESTINATIONS</h1>"); 
+ 
+document.writeln("<h2>Places in the Philippines</h2>"); 
+ 
+document.writeln("<iframe id='googlemap' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8002527.052792546!2d117.32692185091412!3d11.660077620073592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sPhilippines!5e0!3m2!1sen!2sph!4v1794450394482!5m2!1sen!2sph' width='600' height='400'></iframe>"); 
+
+document.writeln("<br><br>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.211221352339!2d120.97845027587444!3d14.587036777407466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca23d0569b6b%3A0xcfc70cbb93eae02a!2sNational%20Museum%20of%20Fine%20Arts!5e0!3m2!1sen!2sph!4v1794455134520!5m2!1sen!2sph'; document.body.style.backgroundImage='url(https://i.pinimg.com/1200x/09/79/cc/0979cca3bda0d0356d0572014020e77f.jpg)'\">NATIONAL MUSEUM OF THE PHILIPPINES</button>");
+
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15534.115748137094!2d123.67581266157545!3d13.254852429542908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a1a9954fa1731f%3A0xdff71d3eddd0ea0d!2sMayon%20Volcano!5e0!3m2!1sen!2sph!4v1794455319937!5m2!1sen!2sph'; document.body.style.backgroundImage='url(https://i.pinimg.com/1200x/16/66/e7/1666e72fe23adf71dc479b16aaf5ca47.jpg)'\">MOUNT MAYON</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.216252346256!2d120.59486927589653!3d16.413839930118286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a15d67140ddb%3A0xf57fc150d9f999a4!2sIli-Likha%20Artists%20Village!5e0!3m2!1sen!2sph!4v1794455445026!5m2!1sen!2sph'; document.body.style.backgroundImage='url(https://i.pinimg.com/1200x/ef/82/aa/ef82aad413925d7ebb04bedc97f5df5f.jpg)'\">ILI-LIKHA</button>"); 
+ 
+document.writeln("<button onclick=\"document.getElementById('googlemap').src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722.346360325108!2d120.969246644803!3d14.589205726513466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca3d1375e1fb%3A0x49ebfa658c0ba08!2sIntramuros%2C%20Manila%2C%201002%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1794455571695!5m2!1sen!2sph'; document.body.style.backgroundImage='url(https://i.pinimg.com/1200x/c4/29/4d/c4294dd668e38dea91c39f8c45db6a64.jpg)'\">INTRAMUROS</button>"); 
+ 
+document.writeln("</center>");
+ 
+</script> 
+
+ 
+</body> 
+</html>
